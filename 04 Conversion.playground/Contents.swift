@@ -1,3 +1,9 @@
-import UIKit
+let googleStock = 12.5
 
-var greeting = "Hello, playground"
+let userStockBuy:Int = Int(googleStock) + 1
+
+let userAge = ""
+
+let userAgeInSystem = Int(userAge)
+
+let storagedValue = (userAgeInSystem ?? 2) + 5
