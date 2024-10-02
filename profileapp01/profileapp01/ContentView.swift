@@ -73,7 +73,7 @@ struct ContentView: View {
                             Text("Followers")
                                 .font(.caption)
                                 .foregroundColor(.gray)
-                        }
+                        }.padding(.trailing)
                         VStack{
                             Text("231")
                                 .font(.title)
