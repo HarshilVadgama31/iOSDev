@@ -41,7 +41,7 @@ enum Choice: Int, Identifiable {
 
 struct ContentView: View {
     
-    @State public var symbols = ["blackpanther", "captain", "captainamerica"]
+    @State public var symbols = ["blackpanther", "captain", "captainamerica", "ironman", "deadpool"]
     @State public var numbers = [0, 1, 2]
     @State public var counter = 0
     @State private var showingAlert: Choice?
@@ -121,7 +121,7 @@ struct ContentView: View {
                     
                     counter += 1
                     
-                    var initial = self.numbers[0]
+                    let initial = self.numbers[0]
                     var flag = true
                     for i in 1...2{
                         if initial != self.numbers[i] {
