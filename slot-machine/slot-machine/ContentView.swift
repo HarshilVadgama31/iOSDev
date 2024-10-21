@@ -124,16 +124,12 @@ struct ContentView: View {
                     var initial = self.numbers[0]
                     var flag = true
                     for i in 1...2{
-                        if initial == self.numbers[i] {
-                            continue
-                        }
-                        else
-                        {
+                        if initial != self.numbers[i] {
                             flag = false
                         }
                     }
                     
-                    if counter < 4 && flag == true {
+                    if counter <= 5 && flag == true {
                         self.showingAlert = .success
                         counter = 0
                     }
