@@ -134,10 +134,9 @@ struct KeyView: View {
                 self.value = "\(currentValue)"
             }
             else if button == .decimal {
-                self.value = "\(self.value).\(self.value)"
+                self.value = "\(self.value)" + "."
+                let currentValue = Double(self.value)
             }
-            
-            break
         default:
             let number = button.rawValue
             if self.value == "0" {
